@@ -36,22 +36,22 @@ int main(){
 		cout<<"Meter Datos"<<endl;
 		cin>>v1[i];		
 	 }
-	    cout<<"numero a buscar"<<endl;
-	    cin>>x;
-	    resp=funcion(v1,tam,x);
+	        cout<<"numero a buscar"<<endl;
+	        cin>>x;
+	        resp=funcion(v1,tam,x);
 	 
 	 if (resp==1){
-	 	cout<<"Se encontro"<<endl;
+	     cout<<"Se encontro"<<endl;
 	 	}
 		else{
 	 	cout<<" No Se encontro"<<endl;
 	  }
 	  
-	   nuM=menor(v1, tam);
-	   cout<<"Numero menor"<<"="<<nuM<<endl;
+	        nuM=menor(v1, tam);
+	        cout<<"Numero menor"<<"="<<nuM<<endl;
 	  
-	   cout<<"Cuantos datos son?"<<endl;
-	   cin>>tam2;
+	        cout<<"Cuantos datos son?"<<endl;
+	        cin>>tam2;
 	 
 	 for (int i=0; i<tam2;i++){
 		cout<<"Meter Datos Caracteres"<<endl;
@@ -68,32 +68,29 @@ int main(){
 		cin>>b;
 
 
-        intercambio(a,b);
+                intercambio(a,b);
 		cout<<"Valor de A invertido"<<a<<endl;
 		cout<<"Valor de B invertido"<<b<<endl;
 
 
-        cout<<"Cuantos numeros son?"<<endl;
-	    cin>>n;
+                cout<<"Cuantos numeros son?"<<endl;
+                cin>>n;
 	 
-	 for (int i=0;i<n;i++){
+	   for(int i=0;i<n;i++){
 		cout<<"Meter Datos"<<endl;
 		cin>>arre[i];		
-	 }
-        mostrar(arre,n); 
+	        }
+                mostrar(arre,n); 
     
-        cout<<"Cuantos numeros son?"<<endl;
-	    cin>>n2;
-     for (int i=0;i<n2;i++){
+                cout<<"Cuantos numeros son?"<<endl;
+	        cin>>n2;
+           for (int i=0;i<n2;i++){
 		cout<<"Meter Datos"<<endl;
 		cin>>arreglo2[i];		
-	 }
-
-	
+	        }
 		int contar = contarCadena(arreglo2);
 		cout<<"Numero de Caracteres"<<contar<<endl;
 
-	
 	  return 0;
 	 }
 	
@@ -102,7 +99,7 @@ bool funcion(int v1[], int tam, int x){///Funcion booleana para saber si Se enco
 	
 	for (int i=0; i<tam;i++){
 		if(x==v1[i]){
-			b=1;
+		b=1;
 		}
 	}
 	return b;
@@ -113,7 +110,7 @@ int menor(int v1[], int tam){///Funcion Numero menor de un arreglo de numeros
 	
 	for(int i=0;i<tam;i++){
 		if(v1[i]<numero){
-			numero=v1[i];
+		numero=v1[i];
 			
 		}		
 	}
@@ -124,9 +121,9 @@ int str(string texto, int tam2){///Funcion Mostrar Numero de Caracteres
     
     for(int i=0; i<tam2;i++)
      	if(texto[i]!='/0'){
-     		numCa++;
+     	      numCa++;
 		 }
-		 return numCa;
+        return numCa;
 	 }
 	 
 void intercambio(int &a, int &b){///Funcion Intercambio de valor de variables por referencia
@@ -163,7 +160,7 @@ int menor2(int *arre1, int n){///Funcion numero menor con apuntadores
 	int num=*p;
 	for (int i=0;i<n;i++){
 		if(num>*p){
-			num=*p;
+		num=*p;
 		}
 		p++;
 	}
@@ -190,7 +187,7 @@ void cambiar (char *arre){//Funcion Cambiar un Caracter por Otro Apuntadores
 	 p=arre;
 	 while(*p='\0'){
 		 if(*p==' '){
-			 *p=95;//valor ASCII "-"" 
+	            *p=95;//valor ASCII "-"" 
 		 }
         p++;
 	 }
